@@ -1,0 +1,159 @@
+{
+  "difficulty": [
+    {
+      "difficultyName": "Easy",
+      "slugName": "easy",
+      "koreanName": "이지"
+    },
+    {
+      "difficultyName": "Normal",
+      "slugName": "normal",
+      "koreanName": "노말"
+    },
+    {
+      "difficultyName": "Hard",
+      "slugName": "hard",
+      "koreanName": "하드"
+    },
+    {
+      "difficultyName": "Chaos",
+      "slugName": "chaos",
+      "koreanName": "카오스"
+    },
+    {
+      "difficultyName": "Extreme",
+      "slugName": "extreme",
+      "koreanName": "익스트림"
+    }
+  ],
+  "boss": [
+    {
+      "bossName": "Lotus",
+      "slugName": "lotus",
+      "koreanName": "스우",
+      "difficulty": [
+        "Normal",
+        "Hard",
+        "Extreme"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Lotus_%282024%29.png"
+    },
+    {
+      "bossName": "Damien",
+      "slugName": "damien",
+      "koreanName": "데미안",
+      "difficulty": [
+        "Normal",
+        "Hard"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Damien.png"
+    },
+    {
+      "bossName": "Guardian Angel Slime",
+      "slugName": "guardian-angel-slime",
+      "koreanName": "가디언 엔젤 슬라임",
+      "difficulty": [
+        "Normal",
+        "Chaos"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Guardian_Angel_Slime.png"
+    },
+    {
+      "bossName": "Lucid",
+      "slugName": "lucid",
+      "koreanName": "루시드",
+      "difficulty": [
+        "Easy",
+        "Normal",
+        "Hard"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Lucid.png"
+    },
+    {
+      "bossName": "Will",
+      "slugName": "will",
+      "koreanName": "윌",
+      "difficulty": [
+        "Easy",
+        "Normal",
+        "Hard"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Will.png"
+    },
+    {
+      "bossName": "Gloom",
+      "slugName": "gloom",
+      "koreanName": "더스크",
+      "difficulty": [
+        "Normal",
+        "Chaos"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Giant_Monster_Gloom.png"
+    },
+    {
+      "bossName": "Verus Hilla",
+      "slugName": "verus-hilla",
+      "koreanName": "진힐라",
+      "difficulty": [
+        "Normal",
+        "Hard"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Verus_Hilla.png"
+    },
+    {
+      "bossName": "Darknell",
+      "slugName": "darknell",
+      "koreanName": "듄켈",
+      "difficulty": [
+        "Normal",
+        "Hard"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Guard_Captain_Darknell.png"
+    },
+    {
+      "bossName": "Black Mage",
+      "slugName": "black-mage",
+      "koreanName": "검은 마법사/ 검마",
+      "difficulty": [
+        "Hard",
+        "Extreme"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Black_Mage.png"
+    },
+    {
+      "bossName": "Seren",
+      "slugName": "seren",
+      "koreanName": "세렌",
+      "difficulty": [
+        "Normal",
+        "Hard",
+        "Extreme"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Chosen_Seren.png"
+    },
+    {
+      "bossName": "Kalos",
+      "slugName": "kalos",
+      "koreanName": "칼로스",
+      "difficulty": [
+        "Easy",
+        "Normal",
+        "Chaos",
+        "Extreme"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Kalos_the_Guardian.png"
+    },
+    {
+      "bossName": "Kaling",
+      "slugName": "kaling",
+      "koreanName": "카링",
+      "difficulty": [
+        "Easy",
+        "Normal",
+        "Hard",
+        "Extreme"
+      ],
+      "imageURL": "https://media.maplestorywiki.net/yetidb/Boss_Entry_UI_-_Kaling.png"
+    }
+  ]
+}

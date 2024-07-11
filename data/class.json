@@ -1,0 +1,180 @@
+{
+  "explorer": [
+    {
+      "className": "Hero",
+      "slugName": "hero",
+      "koreanName": "히어로",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Hero_%28Destiny%2C_Male%29.png",
+      "origin": [
+        "Spirit Calibur"
+      ],
+      "mastery": [
+        "HEXA Raging Blow",
+        "HEXA Rising Rage"
+      ],
+      "enhance": [
+        "Burning Soul Blade",
+        "Instinctual Combo",
+        "Worldreaver",
+        "Sword Illusion"
+      ],
+      "common": [
+        "Sol Janus"
+      ]
+    },
+    {
+      "className": "Paladin",
+      "slugName": "paladin",
+      "koreanName": "팔라딘",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Paladin_%28Destiny%2C_Male%29.png",
+      "origin": [
+        "Sacred Bastion"
+      ],
+      "mastery": [
+        "HEXA Blast",
+        "HEXA Divine Judgement/Divine Charge/Divine Mark/Falling Justice"
+      ],
+      "enhance": [
+        "Divine Echo",
+        "Hammer of the Righteous",
+        "Grand Guardian",
+        "Mighty Mjolnir"
+      ],
+      "common": [
+        "Sol Janus"
+      ]
+    },
+    {
+      "className": "Dark Knight",
+      "slugName": "dark-knight",
+      "koreanName": "다크나이트/ 닼나",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Dark_Knight_%28Destiny%2C_Male%29.png",
+      "origin": [
+        "Dead Space"
+      ],
+      "mastery": [
+        "HEXA Gungnir's Descent",
+        "HEXA Dark Impale/Dark Bident/Nightshade Explosion"
+      ],
+      "enhance": [
+          "Spear of Darkness",
+          "Radiant Evil",
+          "Calamitous Cyclone",
+          "Darkness Aura"
+      ],
+      "common": [
+        "Sol Janus"
+      ]
+    },
+    {
+      "className": "Bishop",
+      "slugName": "bishop",
+      "koreanName": "비숍",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Bishop_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Arch Mage (I/L)",
+      "slugName": "arch-mage-il",
+      "koreanName": "썬콜",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Arch_Mage_%28Ice%2C_Lightning%29_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Arch Mage (F/P)",
+      "slugName": "arch-mage-fp",
+      "koreanName": "불독",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Arch_Mage_%28Fire%2C_Poison%29_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Dual Blade",
+      "slugName": "dual-blade",
+      "koreanName": "듀얼블레이드/ 듀블",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Dual_Blade_%282020%2C_Male%29.png"
+    },
+    {
+      "className": "Shadower",
+      "slugName": "shadower",
+      "koreanName": "섀도어",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Shadower_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Night Lord",
+      "slugName": "night-lord",
+      "koreanName": "나이트로드/ 나로",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Night_Lord_%28Destiny%2C_Male%29.png"
+    },
+    {
+      "className": "Bowmaster",
+      "slugName": "bowmaster",
+      "koreanName": "보우마스터/ 보마",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Bowmaster_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Marksman",
+      "slugName": "marksman",
+      "koreanName": "신궁",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Marksman_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Pathfinder",
+      "slugName": "pathfinder",
+      "koreanName": "패스파인더/ 패파",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Pathfinder.png"
+    },
+    {
+      "className": "Buccaneer",
+      "slugName": "buccaneer",
+      "koreanName": "바이퍼",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Buccaneer_%28Destiny%2C_Male%29.png"
+    },
+    {
+      "className": "Corsair",
+      "slugName": "corsair",
+      "koreanName": "캡틴",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Corsair_%28Destiny%2C_Female%29.png"
+    },
+    {
+      "className": "Cannoneer",
+      "slugName": "cannoneer",
+      "koreanName": "캐논슈터/ 캐슈",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Cannoneer_%28Awake%29.png"
+    }
+  ],
+  "cygnus": [
+    {
+      "className": "Dawn Warrior",
+      "slugName": "dawn-warrior",
+      "koreanName": "소울마스터/ 소마",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Dawn_Warrior_%28Ignition%2C_Female%29.png"
+    },
+    {
+      "className": "Blaze Wizard",
+      "slugName": "blaze-wizard",
+      "koreanName": "플레임위자드/ 플위",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Blaze_Wizard_%28Ignition%2C_Male%29.png"
+    },
+    {
+      "className": "Wind Archer",
+      "slugName": "wind-archer",
+      "koreanName": "윈드브레이커/ 윈브",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Wind_Archer_%28Ignition%2C_Male%29.png"
+    },
+    {
+      "className": "Night Walker",
+      "slugName": "night-walker",
+      "koreanName": "나이트워커/ 나워",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Night_Walker_%28Ignition%2C_Female%29.png"
+    },
+    {
+      "className": "Thunder Breaker",
+      "slugName": "thunder-breaker",
+      "koreanName": "스트라이커/ 스커",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Thunder_Breaker_%28Ignition%2C_Female%29.png"
+    },
+    {
+      "className": "Mihile",
+      "slugName": "mihile",
+      "koreanName": "미하일",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Mihile_%28Ignition%29.png"
+    }
+  ]
+}

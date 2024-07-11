@@ -1,14 +1,14 @@
-package main
+package hexa
 
 var (
-	originTotal       = 4500
-	enhanceCoreTotal  = 3383
-	masteryCoreTotal  = 2252
-	numOfEnhanceCore  = 4
-	numOfMasteryCore  = 1
-	MaxNumOfFragments = originTotal + (enhanceCoreTotal * numOfEnhanceCore) + (masteryCoreTotal * numOfMasteryCore)
+	OriginTotal       = 4500
+	EnhanceCoreTotal  = 3383
+	MasteryCoreTotal  = 2252
+	NumOfEnhanceCore  = 4
+	NumOfMasteryCore  = 1
+	MaxNumOfFragments = OriginTotal + (EnhanceCoreTotal * NumOfEnhanceCore) + (MasteryCoreTotal * NumOfMasteryCore)
 
-	originLevelUpChart = map[int]int{
+	OriginLevelUpChart = map[int64]int{
 		1:  100,
 		2:  30,
 		3:  35,
@@ -41,7 +41,7 @@ var (
 		30: 500,
 	}
 
-	enhanceCoreLevelUpChart = map[int]int{
+	EnhanceCoreLevelUpChart = map[int64]int{
 		1:  75,
 		2:  23,
 		3:  27,
@@ -74,7 +74,7 @@ var (
 		30: 375,
 	}
 
-	masteryCoreLevelUpChart = map[int]int{
+	MasteryCoreLevelUpChart = map[int64]int{
 		1:  50,
 		2:  15,
 		3:  18,
