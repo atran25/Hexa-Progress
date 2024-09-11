@@ -176,5 +176,167 @@
       "koreanName": "미하일",
       "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Mihile_%28Ignition%29.png"
     }
+  ],
+  "Hero": [
+    {
+      "className": "Mercedes",
+      "slugName": "mercedes",
+      "koreanName": "메르세데스/ 메르/ 메세",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Mercedes_%28Nova%29.png"
+    },
+    {
+      "className": "Aran",
+      "slugName": "aran",
+      "koreanName": "아란",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Aran_%28Milestone%29.png"
+    },
+    {
+      "className": "Phantom",
+      "slugName": "phantom",
+      "koreanName": "팬텀",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Phantom_%28Nova%29.png"
+    },
+    {
+      "className": "Luminous",
+      "slugName": "luminous",
+      "koreanName": "루미너스/ 루미",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Luminous_%28Nova%29.png"
+    },
+    {
+      "className": "Evan",
+      "slugName": "evan",
+      "koreanName": "에반",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Evan_%28Nova%29.png"
+    },
+    {
+      "className": "Shade",
+      "slugName": "shade",
+      "koreanName": "은월",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Shade_%28Milestone%29.png"
+    }
+  ],
+  "Resistance": [
+    {
+      "className": "Blaster",
+      "slugName": "blaster",
+      "koreanName": "블래스터/ 블래",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Blaster_%28Female%29.png"
+    },
+    {
+      "className": "Battle Mage",
+      "slugName": "battle-mage",
+      "koreanName": "배틀메이지/ 배메",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Battle_Mage_%28Black_Heaven%2C_Female%29.png"
+    },
+    {
+      "className": "Wild Hunter",
+      "slugName": "wild-hunter",
+      "koreanName": "와일드헌터/ 와헌",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Wild_Hunter_%28Black_Heaven%2C_Male%29.png"
+    },
+    {
+      "className": "Mechanic",
+      "slugName": "mechanic",
+      "koreanName": "메카닉",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Mechanic_%28Black_Heaven%2C_Female%29.png"
+    },
+    {
+      "className": "Xenon",
+      "slugName": "xenon",
+      "koreanName": "제논",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Xenon_%28Male%29.png"
+    },
+    {
+      "className": "Demon Slayer",
+      "slugName": "demon-slayer",
+      "koreanName": "데몬 슬레이어/ 데슬",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/thumb/ClassArtwork_Demon_Slayer_%28Awake%29.png/600px-ClassArtwork_Demon_Slayer_%28Awake%29.png"
+    },
+    {
+      "className": "Demon Avenger",
+      "slugName": "demon-avenger",
+      "koreanName": "데몬 어벤저/ 데벤/ 데벤저",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/thumb/ClassArtwork_Demon_Avenger_%28Awake%29.png/600px-ClassArtwork_Demon_Avenger_%28Awake%29.png"
+    }
+  ],
+  "Nova": [
+    {
+      "className": "Kaiser",
+      "slugName": "kaiser",
+      "koreanName": "카이저",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Kaiser.png"
+    },
+    {
+      "className": "Angelic Buster",
+      "slugName": "angelic-buster",
+      "koreanName": "엔젤릭버스터/ 엔버",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Angelic_Buster_%282023%29.png"
+    },
+    {
+      "className": "Cadena",
+      "slugName": "cadena",
+      "koreanName": "카데나",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Cadena.png"
+    },
+    {
+      "className": "Kain",
+      "slugName": "kain",
+      "koreanName": "카인",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Kain.png"
+    }
+  ],
+  "Flora": [
+    {
+      "className": "Illium",
+      "slugName": "illium",
+      "koreanName": "일리움",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Illium.png"
+    },
+    {
+      "className": "Ark",
+      "slugName": "ark",
+      "koreanName": "아크",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Ark.png"
+    },
+    {
+      "className": "Adele",
+      "slugName": "adele",
+      "koreanName": "아델",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Adele.png"
+    },
+    {
+      "className": "Khali",
+      "slugName": "khali",
+      "koreanName": "칼리",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Khali.png"
+    }
+  ],
+  "Anima": [
+    {
+      "className": "Hoyoung",
+      "slugName": "hoyoung",
+      "koreanName": "호영",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Hoyoung.png"
+    },
+    {
+      "className": "Lara",
+      "slugName": "lara",
+      "koreanName": "라라",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Lara.png"
+    }
+  ],
+  "Other": [
+    {
+      "className": "Kinesis",
+      "slugName": "kinesis",
+      "koreanName": "키네시스/ 키네",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Kinesis.png"
+    },
+    {
+      "className": "Zero",
+      "slugName": "zero",
+      "koreanName": "제로",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/ClassArtwork_Zero.png"
+    }
   ]
 }
