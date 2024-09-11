@@ -26,6 +26,54 @@ func (c *BotCommands) GetBossCommand() *discordgo.ApplicationCommand {
 		})
 	}
 
+	var heroClassChoices []*discordgo.ApplicationCommandOptionChoice
+	for _, class := range c.ClassData.Hero {
+		heroClassChoices = append(heroClassChoices, &discordgo.ApplicationCommandOptionChoice{
+			Name:  class.ClassName,
+			Value: class.SlugName,
+		})
+	}
+
+	var resistanceClassChoices []*discordgo.ApplicationCommandOptionChoice
+	for _, class := range c.ClassData.Resistance {
+		resistanceClassChoices = append(resistanceClassChoices, &discordgo.ApplicationCommandOptionChoice{
+			Name:  class.ClassName,
+			Value: class.SlugName,
+		})
+	}
+
+	var novaClassChoices []*discordgo.ApplicationCommandOptionChoice
+	for _, class := range c.ClassData.Nova {
+		novaClassChoices = append(novaClassChoices, &discordgo.ApplicationCommandOptionChoice{
+			Name:  class.ClassName,
+			Value: class.SlugName,
+		})
+	}
+
+	var floraClassChoices []*discordgo.ApplicationCommandOptionChoice
+	for _, class := range c.ClassData.Flora {
+		floraClassChoices = append(floraClassChoices, &discordgo.ApplicationCommandOptionChoice{
+			Name:  class.ClassName,
+			Value: class.SlugName,
+		})
+	}
+
+	var animaClassChoices []*discordgo.ApplicationCommandOptionChoice
+	for _, class := range c.ClassData.Anima {
+		animaClassChoices = append(animaClassChoices, &discordgo.ApplicationCommandOptionChoice{
+			Name:  class.ClassName,
+			Value: class.SlugName,
+		})
+	}
+
+	var otherClassChoices []*discordgo.ApplicationCommandOptionChoice
+	for _, class := range c.ClassData.Other {
+		otherClassChoices = append(otherClassChoices, &discordgo.ApplicationCommandOptionChoice{
+			Name:  class.ClassName,
+			Value: class.SlugName,
+		})
+	}
+
 	var bossChoices []*discordgo.ApplicationCommandOptionChoice
 	for _, boss := range c.BossData.Boss {
 		bossChoices = append(bossChoices, &discordgo.ApplicationCommandOptionChoice{
@@ -70,6 +118,132 @@ func (c *BotCommands) GetBossCommand() *discordgo.ApplicationCommand {
 						Type:        discordgo.ApplicationCommandOptionString,
 						Required:    true,
 						Choices:     cygnusClassChoices,
+					},
+					{
+						Name:        "boss",
+						Description: "boss name",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     bossChoices,
+					},
+				},
+			},
+			{
+				Type:        discordgo.ApplicationCommandOptionSubCommand,
+				Name:        "hero",
+				Description: "hero branch",
+				Options: []*discordgo.ApplicationCommandOption{
+					{
+						Name:        "class",
+						Description: "hero class",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     heroClassChoices,
+					},
+					{
+						Name:        "boss",
+						Description: "boss name",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     bossChoices,
+					},
+				},
+			},
+			{
+				Type:        discordgo.ApplicationCommandOptionSubCommand,
+				Name:        "resistance",
+				Description: "resistance branch",
+				Options: []*discordgo.ApplicationCommandOption{
+					{
+						Name:        "class",
+						Description: "resistance class",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     resistanceClassChoices,
+					},
+					{
+						Name:        "boss",
+						Description: "boss name",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     bossChoices,
+					},
+				},
+			},
+			{
+				Type:        discordgo.ApplicationCommandOptionSubCommand,
+				Name:        "nova",
+				Description: "nova branch",
+				Options: []*discordgo.ApplicationCommandOption{
+					{
+						Name:        "class",
+						Description: "nova class",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     novaClassChoices,
+					},
+					{
+						Name:        "boss",
+						Description: "boss name",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     bossChoices,
+					},
+				},
+			},
+			{
+				Type:        discordgo.ApplicationCommandOptionSubCommand,
+				Name:        "flora",
+				Description: "flora branch",
+				Options: []*discordgo.ApplicationCommandOption{
+					{
+						Name:        "class",
+						Description: "flora class",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     floraClassChoices,
+					},
+					{
+						Name:        "boss",
+						Description: "boss name",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     bossChoices,
+					},
+				},
+			},
+			{
+				Type:        discordgo.ApplicationCommandOptionSubCommand,
+				Name:        "anima",
+				Description: "anima branch",
+				Options: []*discordgo.ApplicationCommandOption{
+					{
+						Name:        "class",
+						Description: "anima class",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     animaClassChoices,
+					},
+					{
+						Name:        "boss",
+						Description: "boss name",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     bossChoices,
+					},
+				},
+			},
+			{
+				Type:        discordgo.ApplicationCommandOptionSubCommand,
+				Name:        "other",
+				Description: "other branch",
+				Options: []*discordgo.ApplicationCommandOption{
+					{
+						Name:        "class",
+						Description: "other class",
+						Type:        discordgo.ApplicationCommandOptionString,
+						Required:    true,
+						Choices:     otherClassChoices,
 					},
 					{
 						Name:        "boss",

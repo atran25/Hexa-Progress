@@ -9,8 +9,14 @@ import (
 )
 
 type ClassData struct {
-	Explorer []Data `json:"explorer"`
-	Cygnus   []Data `json:"cygnus"`
+	Explorer   []Data `json:"explorer"`
+	Cygnus     []Data `json:"cygnus"`
+	Hero       []Data `json:"hero"`
+	Resistance []Data `json:"resistance"`
+	Nova       []Data `json:"nova"`
+	Flora      []Data `json:"flora"`
+	Anima      []Data `json:"anima"`
+	Other      []Data `json:"other"`
 }
 
 type Data struct {

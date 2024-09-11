@@ -23,6 +23,24 @@ func NewBotCommands(classData data.ClassData, bossData data.BossData) *BotComman
 	for _, class := range classData.Cygnus {
 		classDataMap[class.SlugName] = class
 	}
+	for _, class := range classData.Hero {
+		classDataMap[class.SlugName] = class
+	}
+	for _, class := range classData.Resistance {
+		classDataMap[class.SlugName] = class
+	}
+	for _, class := range classData.Nova {
+		classDataMap[class.SlugName] = class
+	}
+	for _, class := range classData.Flora {
+		classDataMap[class.SlugName] = class
+	}
+	for _, class := range classData.Anima {
+		classDataMap[class.SlugName] = class
+	}
+	for _, class := range classData.Other {
+		classDataMap[class.SlugName] = class
+	}
 	bossDataMap := make(map[string]data.Boss)
 	for _, boss := range bossData.Boss {
 		bossDataMap[boss.SlugName] = boss
