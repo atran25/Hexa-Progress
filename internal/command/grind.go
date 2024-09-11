@@ -2,7 +2,7 @@ package command
 
 import "github.com/bwmarrin/discordgo"
 
-func (c *CommandHandler) getGrindCommand() *discordgo.ApplicationCommand {
+func (c *BotCommands) getGrindCommand() *discordgo.ApplicationCommand {
 	var explorerClassChoices []*discordgo.ApplicationCommandOptionChoice
 	for _, class := range c.ClassData.Explorer {
 		explorerClassChoices = append(explorerClassChoices, &discordgo.ApplicationCommandOptionChoice{
@@ -26,6 +26,13 @@ func (c *CommandHandler) getGrindCommand() *discordgo.ApplicationCommand {
 						Required:    true,
 						Choices:     explorerClassChoices,
 					},
+					//{
+					//	Name:        "area",
+					//	Description: "area name",
+					//	Type:        discordgo.ApplicationCommandOptionString,
+					//	Required:    true,
+					//	Choices:
+					//},
 				},
 			},
 		},

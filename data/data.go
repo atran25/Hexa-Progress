@@ -74,3 +74,36 @@ func ReadBossData(path string) (BossData, error) {
 
 	return bossData, nil
 }
+
+type AreaData struct {
+	ArcaneRiver []Area `json:"arcaneRiver"`
+}
+
+type Area struct {
+	Name       string    `json:"name"`
+	SlugName   string    `json:"slugName"`
+	KoreanName string    `json:"koreanName"`
+	SubArea    []SubArea `json:"subArea"`
+}
+
+type SubArea struct {
+	Name       string `json:"name"`
+	SlugName   string `json:"slugName"`
+	KoreanName string `json:"koreanName"`
+}
+
+func ReadAreaData(path string) (AreaData, error) {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return AreaData{}, fmt.Errorf("reading area.json file: %w", err)
+	}
+
+	var areaData AreaData
+	if err := json.Unmarshal(data, &areaData); err != nil {
+		return AreaData{}, fmt.Errorf("unmarshalling data into []AreaData: %w", err)
+	}
+
+	log.Info().Any("areaData", areaData).Msg("Area data loaded.")
+
+	return areaData, err
+}

@@ -1,0 +1,31 @@
+{
+  "arcaneRiver": [
+    {
+      "name": "Vanishing Journey",
+      "slugName": "vanishing-journey",
+      "koreanName": "소멸의 여로/ 여로",
+      "subArea": [
+        {
+          "name": "Rock Zone",
+          "slugName": "rock-zone",
+          "koreanName": "암석의 영토"
+        },
+        {
+          "name": "Fire Zone",
+          "slugName": "fire-zone",
+          "koreanName": "화염의 영토"
+        },
+        {
+          "name": "Below The Cave",
+          "slugName": "below-the-cave",
+          "koreanName": "동굴 아래쪽"
+        },
+        {
+          "name": "Eastern Cave Path",
+          "slugName": "eastern-cave-path",
+          "koreanName": "동굴의 동쪽길"
+        }
+      ]
+    }
+  ]
+}

@@ -20,3 +20,9 @@ func TestReadBossData(t *testing.T) {
 	assert.Len(t, bossData.Difficulty, 5)
 	assert.Len(t, bossData.Boss, 12)
 }
+
+func TestReadAreaData(t *testing.T) {
+	areaData, err := ReadAreaData("area.json")
+	assert.NoErrorf(t, err, "ReadAreaData() error = %v", err)
+	assert.Len(t, areaData.ArcaneRiver, 1)
+}

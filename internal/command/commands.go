@@ -1,8 +1,13 @@
 package command
 
-import "github.com/atran25/hexaprogress/data"
+import (
+	"fmt"
 
-type CommandHandler struct {
+	"github.com/atran25/hexaprogress/data"
+	"github.com/bwmarrin/discordgo"
+)
+
+type BotCommands struct {
 	ClassDataMap  map[string]data.Data
 	BossDataMap   map[string]data.Boss
 	DifficultyMap map[string]data.Difficulty
@@ -10,7 +15,7 @@ type CommandHandler struct {
 	BossData      data.BossData
 }
 
-func NewCommandHandler(classData data.ClassData, bossData data.BossData) *CommandHandler {
+func NewBotCommands(classData data.ClassData, bossData data.BossData) *BotCommands {
 	classDataMap := make(map[string]data.Data)
 	for _, class := range classData.Explorer {
 		classDataMap[class.SlugName] = class
@@ -27,11 +32,28 @@ func NewCommandHandler(classData data.ClassData, bossData data.BossData) *Comman
 		difficultyMap[difficulty.SlugName] = difficulty
 	}
 
-	return &CommandHandler{
+	return &BotCommands{
 		ClassDataMap:  classDataMap,
 		BossDataMap:   bossDataMap,
 		DifficultyMap: difficultyMap,
 		ClassData:     classData,
 		BossData:      bossData,
 	}
+}
+
+func (c *BotCommands) GetAllCommands() []*discordgo.ApplicationCommand {
+	return []*discordgo.ApplicationCommand{
+		c.GetBossCommand(),
+	}
+}
+
+func (c *BotCommands) GetAllCommandsHandler() (map[string]func(s *discordgo.Session, i *discordgo.InteractionCreate), error) {
+	bossCommandName, bossCommandHandler, err := c.GetBossCommandHandler()
+	if err != nil {
+		return nil, fmt.Errorf("getting boss command: %w", err)
+	}
+	return map[string]func(s *discordgo.Session, i *discordgo.InteractionCreate){
+		bossCommandName: bossCommandHandler,
+	}, nil
+
 }

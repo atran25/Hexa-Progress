@@ -36,29 +36,22 @@ func run() error {
 	// Add command handlers
 	classData, err := data.ReadClassData("data/class.json")
 	if err != nil {
-		return fmt.Errorf("reading class data: %w", err)
+		return err
 	}
 	bossData, err := data.ReadBossData("data/boss.json")
 	if err != nil {
-		return fmt.Errorf("reading boss data: %w", err)
+		return err
 	}
-	commandHandler := command.NewCommandHandler(classData, bossData)
-	bossCommandHandler := commandHandler.GetBossCommandHandler()
-
+	botCommands := command.NewBotCommands(classData, bossData)
+	botCommandsHandler, err := botCommands.GetAllCommandsHandler()
+	if err != nil {
+		return err
+	}
 	s.AddHandler(func(s *discordgo.Session, i *discordgo.InteractionCreate) {
-		handler, ok := bossCommandHandler[i.ApplicationCommandData().Name]
+		handler, ok := botCommandsHandler[i.ApplicationCommandData().Name]
 		if ok {
 			handler(s, i)
 		}
-		//handler, ok := commandHandlers[i.ApplicationCommandData().Name]
-		//if ok {
-		//	handler(s, i)
-		//}
-		//
-		//handler, ok = command.BossCommandHandlers[i.ApplicationCommandData().Name]
-		//if ok {
-		//	handler(s, i)
-		//}
 	})
 
 	s.AddHandler(func(s *discordgo.Session, r *discordgo.Ready) {
@@ -69,21 +62,13 @@ func run() error {
 		return fmt.Errorf("opening connection to discord: %w", err)
 	}
 
-	var allCommands []*discordgo.ApplicationCommand
-	allCommands = append(allCommands, commandHandler.GetBossCommand())
+	allCommands := botCommands.GetAllCommands()
 	syncCommands(s, cfg.GuildID, allCommands)
 
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, os.Interrupt)
 	log.Info().Msg("Bot is now running.  Press CTRL-C to exit.")
 	<-stop
-
-	//log.Info().Msg("Shutting down bot. Removing commands.")
-	//for _, v := range registeredCommands {
-	//	if err := s.ApplicationCommandDelete(s.State.User.ID, cfg.GuildID, v.ID); err != nil {
-	//		log.Err(err).Str("command", v.Name).Msg("failed to delete command")
-	//	}
-	//}
 
 	return nil
 }
