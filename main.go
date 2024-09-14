@@ -42,7 +42,11 @@ func run() error {
 	if err != nil {
 		return err
 	}
-	botCommands := command.NewBotCommands(classData, bossData)
+	hexaData, err := data.ReadHexaData("data/hexaLevelUpChart.json")
+	if err != nil {
+		return err
+	}
+	botCommands := command.NewBotCommands(classData, bossData, hexaData)
 	botCommandsHandler, err := botCommands.GetAllCommandsHandler()
 	if err != nil {
 		return err

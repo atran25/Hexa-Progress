@@ -113,3 +113,50 @@ func ReadAreaData(path string) (AreaData, error) {
 
 	return areaData, err
 }
+
+type HexaData struct {
+	Info struct {
+		NumOfSkillCore   int `json:"numOfSkillCore"`
+		NumOfBoostCore   int `json:"numOfBoostCore"`
+		NumOfMasteryCore int `json:"numOfMasteryCore"`
+		NumOfCommonCore  int `json:"numOfCommonCore"`
+
+		SkillCoreMaxFragments   int `json:"skillCoreMaxFragments"`
+		BoostCoreMaxFragments   int `json:"boostCoreMaxFragments"`
+		MasteryCoreMaxFragments int `json:"masteryCoreMaxFragments"`
+		CommonCoreMaxFragments  int `json:"commonCoreMaxFragments"`
+	}
+	SkillCoreLevelUpChart   map[int64]int `json:"skillCoreLevelUpChart"`
+	BoostCoreLevelUpChart   map[int64]int `json:"boostCoreLevelUpChart"`
+	MasteryCoreLevelUpChart map[int64]int `json:"masteryCoreLevelUpChart"`
+	CommonCoreLevelUpChart  map[int64]int `json:"commonCoreLevelUpChart"`
+}
+
+func ReadHexaData(path string) (HexaData, error) {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return HexaData{}, fmt.Errorf("reading hexa.json file: %w", err)
+	}
+
+	var hexaData HexaData
+	if err := json.Unmarshal(data, &hexaData); err != nil {
+		return HexaData{}, fmt.Errorf("unmarshalling data into []HexaData: %w", err)
+	}
+
+	// Calculate the Max Fragments for each Core dynamically
+	for _, value := range hexaData.SkillCoreLevelUpChart {
+		hexaData.Info.SkillCoreMaxFragments += value
+	}
+	for _, value := range hexaData.BoostCoreLevelUpChart {
+		hexaData.Info.BoostCoreMaxFragments += value
+	}
+	for _, value := range hexaData.MasteryCoreLevelUpChart {
+		hexaData.Info.MasteryCoreMaxFragments += value
+	}
+	for _, value := range hexaData.CommonCoreLevelUpChart {
+		hexaData.Info.CommonCoreMaxFragments += value
+	}
+
+	log.Info().Any("hexaData", hexaData).Msg("Hexa data loaded.")
+	return hexaData, err
+}

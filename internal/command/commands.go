@@ -13,9 +13,10 @@ type BotCommands struct {
 	DifficultyMap map[string]data.Difficulty
 	ClassData     data.ClassData
 	BossData      data.BossData
+	HexaData      data.HexaData
 }
 
-func NewBotCommands(classData data.ClassData, bossData data.BossData) *BotCommands {
+func NewBotCommands(classData data.ClassData, bossData data.BossData, hexaData data.HexaData) *BotCommands {
 	classDataMap := make(map[string]data.Data)
 	for _, class := range classData.Explorer {
 		classDataMap[class.SlugName] = class
@@ -56,12 +57,14 @@ func NewBotCommands(classData data.ClassData, bossData data.BossData) *BotComman
 		DifficultyMap: difficultyMap,
 		ClassData:     classData,
 		BossData:      bossData,
+		HexaData:      hexaData,
 	}
 }
 
 func (c *BotCommands) GetAllCommands() []*discordgo.ApplicationCommand {
 	return []*discordgo.ApplicationCommand{
 		c.GetBossCommand(),
+		c.GetHexaCommand(),
 	}
 }
 
@@ -70,8 +73,15 @@ func (c *BotCommands) GetAllCommandsHandler() (map[string]func(s *discordgo.Sess
 	if err != nil {
 		return nil, fmt.Errorf("getting boss command: %w", err)
 	}
+
+	hexaCommandName, hexaCommandHandler, err := c.GetHexaCommandHandler()
+	if err != nil {
+		return nil, fmt.Errorf("getting hexa command: %w", err)
+	}
+
 	return map[string]func(s *discordgo.Session, i *discordgo.InteractionCreate){
 		bossCommandName: bossCommandHandler,
+		hexaCommandName: hexaCommandHandler,
 	}, nil
 
 }
