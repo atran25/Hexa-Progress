@@ -34,15 +34,15 @@ func run() error {
 	defer s.Close()
 
 	// Add command handlers
-	classData, err := data.ReadClassData("data/class.json")
+	classData, err := data.ReadClassData("source/class.json")
 	if err != nil {
 		return err
 	}
-	bossData, err := data.ReadBossData("data/boss.json")
+	bossData, err := data.ReadBossData("source/boss.json")
 	if err != nil {
 		return err
 	}
-	hexaData, err := data.ReadHexaData("data/hexaLevelUpChart.json")
+	hexaData, err := data.ReadHexaData("source/hexaLevelUpChart.json")
 	if err != nil {
 		return err
 	}
