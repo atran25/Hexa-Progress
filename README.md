@@ -2,13 +2,18 @@
 
 Hexa Progress is a discord bot for calculating the progress of a Maplestory character's hexa matrix.
 
+## Features
+- Calculate the progress of a Maplestory character's hexa matrix.
+- Find videos of where Korean Maplestory players are training with a specific class.
+- Find videos of how Korean Maplestory players are bossing with a specific class.
+
 ## Screenshots
-![Hexa Progress](/screenshots/6-27-24.png)
+![Hexa Progress](/screenshots/hexaprogress-photo-collage.png)
 
 ## Installation
-### Environement Variables
+### Environment Variables
 HEXAPROGRESS_DISCORD_TOKEN - Discord bot token, obtained from the discord developer portal.  
-HEXAPROGRESS_GUILD_ID - Discord guild id, obtained from the discord client.
+HEXAPROGRESS_GUILD_ID (optional) - Discord guild id, obtained from the discord client. This token is only needed if you want immediate command updates.
 ### Docker
 ```bash
 docker build -t 'hexa-progress' .
