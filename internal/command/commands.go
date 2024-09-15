@@ -11,12 +11,14 @@ type BotCommands struct {
 	ClassDataMap  map[string]data.Data
 	BossDataMap   map[string]data.Boss
 	DifficultyMap map[string]data.Difficulty
+	AreaDataMap   map[string]data.Area
 	ClassData     data.ClassData
 	BossData      data.BossData
 	HexaData      data.HexaData
+	AreaData      data.AreaData
 }
 
-func NewBotCommands(classData data.ClassData, bossData data.BossData, hexaData data.HexaData) *BotCommands {
+func NewBotCommands(classData data.ClassData, bossData data.BossData, hexaData data.HexaData, areaData data.AreaData) *BotCommands {
 	classDataMap := make(map[string]data.Data)
 	for _, class := range classData.Explorer {
 		classDataMap[class.SlugName] = class
@@ -51,13 +53,23 @@ func NewBotCommands(classData data.ClassData, bossData data.BossData, hexaData d
 		difficultyMap[difficulty.SlugName] = difficulty
 	}
 
+	areaDataMap := make(map[string]data.Area)
+	for _, area := range areaData.ArcaneRiver {
+		areaDataMap[area.SlugName] = area
+	}
+	for _, area := range areaData.Grandis {
+		areaDataMap[area.SlugName] = area
+	}
+
 	return &BotCommands{
 		ClassDataMap:  classDataMap,
 		BossDataMap:   bossDataMap,
 		DifficultyMap: difficultyMap,
+		AreaDataMap:   areaDataMap,
 		ClassData:     classData,
 		BossData:      bossData,
 		HexaData:      hexaData,
+		AreaData:      areaData,
 	}
 }
 
@@ -65,6 +77,7 @@ func (c *BotCommands) GetAllCommands() []*discordgo.ApplicationCommand {
 	return []*discordgo.ApplicationCommand{
 		c.GetBossCommand(),
 		c.GetHexaCommand(),
+		c.GetGrindCommand(),
 	}
 }
 
@@ -79,9 +92,15 @@ func (c *BotCommands) GetAllCommandsHandler() (map[string]func(s *discordgo.Sess
 		return nil, fmt.Errorf("getting hexa command: %w", err)
 	}
 
+	grindCommandName, grindCommandHandler, err := c.GetGrindCommandHandler()
+	if err != nil {
+		return nil, fmt.Errorf("getting grind command: %w", err)
+	}
+
 	return map[string]func(s *discordgo.Session, i *discordgo.InteractionCreate){
-		bossCommandName: bossCommandHandler,
-		hexaCommandName: hexaCommandHandler,
+		bossCommandName:  bossCommandHandler,
+		hexaCommandName:  hexaCommandHandler,
+		grindCommandName: grindCommandHandler,
 	}, nil
 
 }

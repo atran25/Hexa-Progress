@@ -83,12 +83,14 @@ func ReadBossData(path string) (BossData, error) {
 
 type AreaData struct {
 	ArcaneRiver []Area `json:"arcaneRiver"`
+	Grandis     []Area `json:"grandis"`
 }
 
 type Area struct {
 	Name       string    `json:"name"`
 	SlugName   string    `json:"slugName"`
 	KoreanName string    `json:"koreanName"`
+	ImageURL   string    `json:"imageURL"`
 	SubArea    []SubArea `json:"subArea"`
 }
 

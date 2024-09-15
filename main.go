@@ -33,7 +33,7 @@ func run() error {
 	}
 	defer s.Close()
 
-	// Add command handlers
+	// Get options data
 	classData, err := data.ReadClassData("source/class.json")
 	if err != nil {
 		return err
@@ -46,7 +46,13 @@ func run() error {
 	if err != nil {
 		return err
 	}
-	botCommands := command.NewBotCommands(classData, bossData, hexaData)
+	areaData, err := data.ReadAreaData("source/area.json")
+	if err != nil {
+		return err
+	}
+
+	botCommands := command.NewBotCommands(classData, bossData, hexaData, areaData)
+	// Add command handlers
 	botCommandsHandler, err := botCommands.GetAllCommandsHandler()
 	if err != nil {
 		return err
@@ -120,7 +126,7 @@ func syncCommands(s *discordgo.Session, guildID string, desiredCommandList []*di
 			// Create new command
 			_, err := s.ApplicationCommandCreate(s.State.User.ID, guildID, cmd)
 			if err != nil {
-				log.Info().Str("command", cmd.Name).Str("guildID", guildID).Msg("Failed to create command")
+				log.Info().Err(err).Str("command", cmd.Name).Str("guildID", guildID).Msg("Failed to create command")
 			} else {
 				log.Info().Str("command", cmd.Name).Str("guildID", guildID).Msg("Successfully created command")
 			}

@@ -4,6 +4,7 @@
       "name": "Vanishing Journey",
       "slugName": "vanishing-journey",
       "koreanName": "소멸의 여로/ 여로",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Vanishing_Journey.png",
       "subArea": [
         {
           "name": "Rock Zone",
@@ -24,6 +25,487 @@
           "name": "Eastern Cave Path",
           "slugName": "eastern-cave-path",
           "koreanName": "동굴의 동쪽길"
+        }
+      ]
+    },
+    {
+      "name": "Reverse City",
+      "slugName": "reverse-city",
+      "koreanName": "리버스시티/ 리버스",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Reverse_City.png",
+      "subArea": [
+        {
+          "name": "T-Boy's Research Train",
+          "slugName": "tboys-research-train",
+          "koreanName": "T-boy의 연구열차"
+        },
+        {
+          "name": "Underground Train",
+          "slugName": "underground-train",
+          "koreanName": "지하열차"
+        }
+      ]
+    },
+    {
+      "name": "Chu Chu Island",
+      "slugName": "chu-chu-island",
+      "koreanName": "츄츄 아일랜드/ 츄츄",
+      "imageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Chu_Chu_Island.png",
+      "subArea": [
+        {
+          "name": "Torrent Zone",
+          "slugName": "torrent-zone",
+          "koreanName": "격류지대/ 격류"
+        },
+        {
+          "name": "Slurpy Forest Depths",
+          "slugName": "slurpy-forest-depths",
+          "koreanName": "츄릅포레스트 깊은 곳/ 츄깊"
+        }
+      ]
+    },
+    {
+      "name": "Yum Yum Island",
+      "slugName": "yum-yum-island",
+      "koreanName": "얌얌 아일랜드/ 얌얌",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Yum_Yum_Island.png",
+      "subArea": [
+        {
+          "name": "Illiard Field",
+          "slugName": "illiard-field",
+          "koreanName": "일리야드 들판/ 일리야드"
+        },
+        {
+          "name": "Fungos Forest",
+          "slugName": "fungos-forest",
+          "koreanName": "펑고스 숲/ 펑고스"
+        }
+      ]
+    },
+    {
+      "name": "Lachelein",
+      "slugName": "lachelein",
+      "koreanName": "레헬른",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Lachelein.png",
+      "subArea": [
+        {
+          "name": "Outlaw's Street",
+          "slugName": "outlaws-street",
+          "koreanName": "무법자들의 거리"
+        },
+        {
+          "name": "Chicken Festival",
+          "slugName": "chicken-festival",
+          "koreanName": "닭이 뛰노는 곳/ 닭뛰"
+        },
+        {
+          "name": "Revelation Place",
+          "slugName": "revelation-place",
+          "koreanName": "본색을 드러내는 곳/ 본색"
+        },
+        {
+          "name": "Occupied Dance Floor",
+          "slugName": "occupied-dance-floor",
+          "koreanName": "춤추는 구두 점령지/구두"
+        },
+        {
+          "name": "Nightmare Clocktower",
+          "slugName": "nightmare-clocktower",
+          "koreanName": "악몽의 시계탑/ 시계탑"
+        }
+      ]
+    },
+    {
+      "name": "Arcana",
+      "slugName": "arcana",
+      "koreanName": "아르카나 ",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Arcana.png",
+      "subArea": [
+        {
+          "name": "The Forest of Earth",
+          "slugName": "the-forest-of-earth",
+          "koreanName": "흙의 숲/ 흙숲"
+        },
+        {
+          "name": "Cavern Upper Path",
+          "slugName": "cavern-upper-path",
+          "koreanName": "동굴 윗길/ 동윗"
+        },
+        {
+          "name": "Deep in the Cavern - Upper Path",
+          "slugName": "deep-in-the-cavern-upper-path",
+          "koreanName": "동굴 윗길 깊은 곳 / 동윗깊"
+        },
+        {
+          "name": "Cavern Lower Path",
+          "slugName": "cavern-lower-path",
+          "koreanName": "동굴 아랫길/ 동아"
+        },
+        {
+          "name": "Deep in the Cavern - Lower Path",
+          "slugName": "deep-in-the-cavern-lower-path",
+          "koreanName": "동굴 아랫길 깊은 곳/ 동아깊"
+        },
+        {
+          "name": "The Deepest Part of the Cavern - Lower Path",
+          "slugName": "the-deepest-part-of-the-cavern-lower-path",
+          "koreanName": "동굴 아랫길 깊디 깊은 곳/ 동아깊깊"
+        },
+        {
+          "name": "Labyrinthine Cavern",
+          "slugName": "labryinthine-cavern",
+          "koreanName": "다섯 갈래 동굴/ 다갈동"
+        }
+      ]
+    },
+    {
+      "name": "Morass",
+      "slugName": "morass",
+      "koreanName": "모라스",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Morass.png",
+      "subArea": [
+        {
+          "name": "Bully Blvd.",
+          "slugName": "bully-blvd",
+          "koreanName": "형님들 구역/ 형님"
+        },
+        {
+          "name": "Shadowdance Hall",
+          "slugName": "shadowdance-hall",
+          "koreanName": "그림자가 춤추는 곳/ 그춤"
+        },
+        {
+          "name": "Abandoned Area",
+          "slugName": "abandoned-area",
+          "koreanName": "폐쇄구역"
+        },
+        {
+          "name": "That Day in Trueffet ",
+          "slugName": "that-day-in-trueffet",
+          "koreanName": "그날의 트뤼에페/ 그튀"
+        }
+      ]
+    },
+    {
+      "name": "Esfera",
+      "slugName": "esfera",
+      "koreanName": "에스페라",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Esfera.png",
+      "subArea": [
+        {
+          "name": "Mirror-touched Sea",
+          "slugName": "mirror-touched-sea",
+          "koreanName": "거울빛에 물든 바다/ 거물바"
+        },
+        {
+          "name": "Radiant Temple",
+          "slugName": "radiant-temple",
+          "koreanName": "거울에 비친 빛의 신전/ 신전"
+        }
+      ]
+    },
+    {
+      "name": "Sellas",
+      "slugName": "sellas",
+      "koreanName": "셀라스",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Sellas.png",
+      "subArea": [
+        {
+          "name": "The Final Edge of Light ",
+          "slugName": "the-final-edge-of-light",
+          "koreanName": "빛이 마지막으로 닿는 곳/ 빛마닿"
+        },
+        {
+          "name": "Plunging Depths",
+          "slugName": "plunging-depths",
+          "koreanName": "끝없이 추락하는 심해/ 끝추심/ 추심/ 끝추"
+        },
+        {
+          "name": "Star-Swallowing Sea",
+          "slugName": "star-swallowing-sea",
+          "koreanName": "별이 삼켜진 심해/ 별삼심"
+        }
+      ]
+    },
+    {
+      "name": "Moonbridge",
+      "slugName": "moonbridge",
+      "koreanName": "문브릿지/ 문브",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Moonbridge.png",
+      "subArea": [
+        {
+          "name": "Last Horizon",
+          "slugName": "last-horizon",
+          "koreanName": "사상의 경계/ 사상"
+        },
+        {
+          "name": "Mysterious Fog",
+          "slugName": "myserious-fog",
+          "koreanName": "미지의 안개/ 안개"
+        },
+        {
+          "name": "Void Current",
+          "slugName": "void-current",
+          "koreanName": "공허의 파도/ 공파"
+        }
+      ]
+    },
+    {
+      "name": "Labyrinth of Suffering",
+      "slugName": "labyrinth-of-suffering",
+      "koreanName": "고통의 미궁/ 미궁",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Labyrinth_of_Suffering.png",
+      "subArea": [
+        {
+          "name": "Labyrinth of Suffering Interior",
+          "slugName": "labryinth-of-suffering-interior",
+          "koreanName": "고통의 미궁 내부/ 미궁 내부"
+        },
+        {
+          "name": "Labyrinth of Suffering Core ",
+          "slugName": "labryinth-of-suffering-core",
+          "koreanName": "고통의 미궁 중심부/ 미궁 중심부/ 미중"
+        },
+        {
+          "name": "Labyrinth of Suffering Deep Core",
+          "slugName": "labryinth-of-suffering-deep-core",
+          "koreanName": "고통의 미궁 최심부/ 미궁 최심부/ 최심부"
+        }
+      ]
+    },
+    {
+      "name": "Limina",
+      "slugName": "limina",
+      "koreanName": "리멘",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Limina.png",
+      "subArea": [
+        {
+          "name": "World's Sorrow",
+          "slugName": "worlds-sorrow",
+          "koreanName": "세계의 눈물"
+        },
+        {
+          "name": "World's Sorrow Depths",
+          "slugName": "worlds-sorrow-depths",
+          "koreanName": "세계의 눈물 하단/ 눈물하단/ 하단"
+        },
+        {
+          "name": "World's Sorrow Midpoint",
+          "slugName": "worlds-sorrow-midpoint",
+          "koreanName": "세계의 눈물 중단/ 눈물중단/ 중단"
+        },
+        {
+          "name": "End of the World",
+          "slugName": "end-of-the-world",
+          "koreanName": "세계가 끝나는 곳/ 세끝"
+        }
+      ]
+    }
+  ],
+  "grandis": [
+    {
+      "name": "Cernium",
+      "slugName": "cernium",
+      "koreanName": "전르니움",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Cernium.png",
+      "subArea": [
+          {
+            "name": "Western City Ramparts",
+            "slugName": "western-city-ramparts",
+            "koreanName": "서쪽 성벽/ 서성"
+          },
+          {
+            "name": "Eastern City Ramparts",
+            "slugName": "eastern-city-ramparts",
+            "koreanName": "동쪽 성벽/ 동성"
+          },
+          {
+            "name": "Royal Library Section",
+            "slugName": "royal-library-section",
+            "koreanName": "왕립 도서관/ 도서관"
+          }
+      ]
+    },
+    {
+      "name": "Burning Cernium",
+      "slugName": "burning-cernium",
+      "koreanName": "불타는 세르니움",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Burning_Cernium.png",
+      "subArea": [
+        {
+          "name": "Western City Ramparts in Battle",
+          "slugName": "western-city-ramparts-in-battle",
+          "koreanName": "격전의 서쪽 성벽/ 서성"
+        },
+        {
+          "name": "Eastern City Ramparts in Battle",
+          "slugName": "eastern-city-ramparts-in-battle",
+          "koreanName": "격전의 동쪽 성벽/ 동성"
+        },
+        {
+          "name": "Burning Royal Library Section",
+          "slugName": "burning-royal-library-section",
+          "koreanName": "불타는 왕립 도서관/ 도서관"
+        }
+      ]
+    },
+    {
+      "name": "Hotel Arcus",
+      "slugName": "hotel-arcus",
+      "koreanName": "호텔 아르크스/ 아르크스",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Hotel_Arcus.png",
+      "subArea": [
+        {
+          "name": "Outlaw-Infested Wastes",
+          "slugName": "outlaw-infested-wastes",
+          "koreanName": "무법자들이 지배하는 황야/ 황야"
+        },
+        {
+          "name": "Nostalgic Drive-in Theater",
+          "slugName": "nostalgic-drive-in-theater",
+          "koreanName": "낭만이 저무는 자동차 극장/ 극장"
+        },
+        {
+          "name": "Train With No Destination",
+          "slugName": "train-with-no-destination",
+          "koreanName": "종착지 없는 횡단열차/ 열차"
+        }
+      ]
+    },
+    {
+      "name": "Odium",
+      "slugName": "odium",
+      "koreanName": "오디움",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Odium.png",
+      "subArea": [
+        {
+          "name": "Road to the Castle's Gate",
+          "slugName": "road-to-the-castles-gate",
+          "koreanName": "성문으로 가는 길/ 성문"
+        },
+        {
+          "name": "Captured Alley",
+          "slugName": "captured-alley",
+          "koreanName": "점령당한 골목/ 골목"
+        },
+        {
+          "name": "Sunny Laboratory",
+          "slugName": "sunny-laboratory",
+          "koreanName": "볕 드는 실험실/ 실험실"
+        },
+        {
+          "name": "Laboratory Behind Locked Door",
+          "slugName": "labratory-behind-locked-door",
+          "koreanName": "잠긴 문 뒤 실험실/ 뒤실험실"
+        }
+      ]
+    },
+    {
+      "name": "Shangri-La",
+      "slugName": "shangri-la",
+      "koreanName": "도원경",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Shangri-La.png",
+      "subArea": [
+        {
+          "name": "Blooming Spring",
+          "slugName": "blooming-spring",
+          "koreanName": "생기가 돌아오는 봄/ 봄"
+        },
+        {
+          "name": "Gentle Summer",
+          "slugName": "gentle-summer",
+          "koreanName": "빛이 약한 여름/ 여름"
+        },
+        {
+          "name": "Drowsy Autumn",
+          "slugName": "drowsy-autumn",
+          "koreanName": "색깔이 옅은 가을/ 가을"
+        },
+        {
+          "name": "Harsh Winter ",
+          "slugName": "harsh-winter",
+          "koreanName": "참혹한 흔적의 겨울/ 겨울"
+        }
+      ]
+    },
+    {
+      "name": "Arteria",
+      "slugName": "arteria",
+      "koreanName": "아르테리아",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Arteria.png",
+      "subArea": [
+        {
+          "name": "Northern Outskirts",
+          "slugName": "northern-outskirts",
+          "koreanName": "북쪽 외곽지역/ 북쪽 외곽"
+        },
+        {
+          "name": "Western Outskirts",
+          "slugName": "western-outskirts",
+          "koreanName": "서쪽 외곽지역/ 서쪽 외곽"
+        },
+        {
+          "name": "Southern Outskirts",
+          "slugName": "southern-outskirts",
+          "koreanName": "남쪽 외곽지역/ 남쪽 외곽"
+        },
+        {
+          "name": "Eastern Outskirts",
+          "slugName": "eastern-outskirts",
+          "koreanName": "동쪽 외곽지역/ 동쪽 외곽"
+        },
+        {
+          "name": "Outskirts Combat Zone",
+          "slugName": "outskirts-combat-zone",
+          "koreanName": "외곽 전투지역"
+        },
+        {
+          "name": "Bottom Deck Passage",
+          "slugName": "bottom-deck-passage",
+          "koreanName": "최하층 통로/ 최하층"
+        },
+        {
+          "name": "Top Deck Passage",
+          "slugName": "top-deck-passage",
+          "koreanName": "최상층 통로/ 최상층"
+        }
+      ]
+    },
+    {
+      "name": "Carcion",
+      "slugName": "carcion",
+      "koreanName": "카르시온",
+      "ImageURL": "https://media.maplestorywiki.net/yetidb/WorldMap_Carcion.png",
+      "subArea": [
+        {
+          "name": "Giant Coral Colony",
+          "slugName": "giant-coral-colony",
+          "koreanName": "거대 산호 군락/ 산호"
+        },
+        {
+          "name": "Calm Beach",
+          "slugName": "calm-beach",
+          "koreanName": "잔잔한 해안가/ 해안가"
+        },
+        {
+          "name": "Enfolding Forest",
+          "slugName": "enfolding-forest",
+          "koreanName": "휘감기는 숲"
+        },
+        {
+          "name": "Among Dark Trunks",
+          "slugName": "among-dark-trunks",
+          "koreanName": "어둠이 내리는 나무줄기/ 나무줄기"
+        },
+        {
+          "name": "Breathtaking Cave",
+          "slugName": "breathtaking-cave",
+          "koreanName": "숨이 멎어드는 동굴/ 동굴/ 숨멎동"
+        },
+        {
+          "name": "Sunken Ruins",
+          "slugName": "sunken-ruins",
+          "koreanName": "가라앉은 유적지/ 유적지"
         }
       ]
     }
