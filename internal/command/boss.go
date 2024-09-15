@@ -264,10 +264,7 @@ func (c *BotCommands) GetBossCommandHandler() (string, func(s *discordgo.Session
 	bossCommandHandler := func(s *discordgo.Session, i *discordgo.InteractionCreate) {
 		options := i.ApplicationCommandData().Options[0].Options
 		log.Info().Interface("Options", options).Msg("options")
-
-		/*
-		*
-		 */
+		
 		optionMap := make(map[string]*discordgo.ApplicationCommandInteractionDataOption, len(options))
 		for _, option := range options {
 			optionMap[option.Name] = option
